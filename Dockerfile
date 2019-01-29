@@ -3,4 +3,4 @@ MAINTAINER "Stakater Team"
 
 COPY Scaler .
 
-CMD ["sh","-c","./Scaler"]
+ENTRYPOINT ["./Scaler"]
