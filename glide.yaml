@@ -1,0 +1,14 @@
+package: github.com/stakater/Scaler
+import:
+- package: github.com/sirupsen/logrus
+  version: 1.0.5
+- package: github.com/spf13/cobra
+  version: ef82de70bb3f60c65fb8eebacbb2d122ef517385
+- package: github.com/spf13/viper
+  version: v1.3.1
+- package: github.com/spf13/pflag
+  version: 583c0c0531f06d5278b7d917446061adc344b5cd
+- package: gopkg.in/yaml.v2
+  version: v2.2.1
+- package: github.com/aws/aws-sdk-go-v2
+  version: v0.6.0
