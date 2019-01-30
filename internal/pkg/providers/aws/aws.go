@@ -6,6 +6,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/autoscaling"
+	"github.com/sirupsen/logrus"
 	"github.com/stakater/Scaler/internal/pkg/cmd/common"
 )
 
@@ -72,6 +73,9 @@ func (a *Aws) updateAutoScalingGroup(session *session.Session, credentials *cred
 	if err != nil {
 		return err
 	}
+
+	logrus.Infof("Successfully modified auto scaling group : %s \n max: %d, min: %d, desired: %d",
+		*a.scalerName, *a.maxSize, *a.minSize, *a.desiredCapacity)
 
 	return nil
 }
