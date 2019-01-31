@@ -31,3 +31,7 @@ Scale can be run by passing arguments to the published image. e.g
 Scaler can be used in combination with Cronjob to control the cluster size during different times. e.g You can bring down your cloud cost by keeping the servers shut down on weekends
 
 A sample configuration of kubernetes cronjob can be found [here](cronjob/example.yaml).
+
+## Adding Support for Cloud Providers
+
+[Provider](internal/pkg/providers/provider.go) can be implemented to modify auto scaling groups on other cloud providers e.g Azure, Google Cloud etc. If new parameters are needed then they can be added by modifying Scaler Options struct in [common.go](internal/pkg/cmd/common/common.go). The values will automatically be available in the Init method of new implementation of [Provider](internal/pkg/providers/provider.go)
