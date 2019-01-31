@@ -1,0 +1,39 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  labels:
+    app: stakater-scaler
+  name: stakater-scaler
+  namespace: global
+spec:
+  schedule: 25 12 * * *
+  jobTemplate:
+    metadata:
+      labels:
+        app: stakater-scaler
+    spec:
+      template:
+        metadata:
+          labels:
+            app: stakater-scaler
+        spec:
+          restartPolicy: Never
+          containers:
+          - args:
+            - --roleArn
+            - arn:aws:iam::account-id:role/scaler-role 
+            - --region
+            - us-west-2
+            - --max
+            - "1"         
+            - --min 
+            - "1" 
+            - --desired 
+            - "1"
+            - --provider 
+            - aws 
+            - --scalerName 
+            - nodes.stackator.com   
+            image: docker.io/stakater/scaler:0.0.1
+            imagePullPolicy: IfNotPresent
+            name: stakater-scaler        
