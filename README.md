@@ -7,16 +7,17 @@ A tool to modify auto scaling groups.
 Scaler can be used to modify max, min and desired capacity of an auto scaling group.
 
 Scaler supports the following flags
-Short Flag | Long Flag | Type | Description
---- | --- | --- | ---  
--d | --desired    | int    | Desired no of instances (Required)
--h | --help       |        | Help for Scaler
--m | --max        | int    | Maximum no of instances (Required)
--i | --min        | int    | Minimum no of instances (Required)
--p | --provider   | string | Cloud provider to user. Valid Values (aws)
--r | --region     | string | Region in which auto scaling group exists (Required)
--a | --roleArn    | string | Arn of role to assume (Required)
--n | --scalerName | string | Name of Auto Scaling group (Required)
+
+|Short Flag|Long Flag|Type|Description|
+|----------|---------|----|-----------|
+|-d | --desired    | int    | Desired no of instances (Required)|
+|-h | --help       |        | Help for Scaler|
+|-m | --max        | int    | Maximum no of instances (Required)|
+|-i | --min        | int    | Minimum no of instances (Required)|
+|-p | --provider   | string | Cloud provider to user. Valid Values (aws)|
+|-r | --region     | string | Region in which auto scaling group exists (Required)|
+|-a | --roleArn    | string | Arn of role to assume (Required)|
+|-n | --scalerName | string | Name of Auto Scaling group (Required)|
 
 ## Run
 
