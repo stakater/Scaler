@@ -23,8 +23,9 @@ Scaler supports the following flags
 
 Scale can be run by passing arguments to the published image. e.g
 
-```docker run -it docker.io/stakater/scaler:0.0.1 --roleArn arn:aws:iam::449074299682:role/nodes.stackator.com --region us-west-2 --max 0 --min 0 --desired 0 --provider aws --scalerName nodes.stackator.com```
-
+```
+docker run -it docker.io/stakater/scaler:0.0.1 --roleArn arn:aws:iam::449074299682:role/nodes.stackator.com --region us-west-2 --max 0 --min 0 --desired 0 --provider aws --scalerName nodes.stackator.com
+```
 
 ## Use Case
 
