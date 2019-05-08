@@ -1,4 +1,4 @@
-# Scaler
+# ![](assets/web/scaler-round-100px.png) Scaler
 
 A tool to modify auto scaling groups.
 
