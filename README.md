@@ -1,6 +1,23 @@
 # ![](assets/web/scaler-round-100px.png) Scaler
 
-A tool to modify auto scaling groups.
+[![Go Report Card](https://goreportcard.com/badge/github.com/stakater/scaler?style=flat-square)](https://goreportcard.com/report/github.com/stakater/scaler)
+[![Go Doc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](http://godoc.org/github.com/stakater/scaler)
+[![Release](https://img.shields.io/github/release/stakater/scaler.svg?style=flat-square)](https://github.com/stakater/scaler/releases/latest)
+[![GitHub tag](https://img.shields.io/github/tag/stakater/scaler.svg?style=flat-square)](https://github.com/stakater/scaler/releases/latest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/stakater/scaler.svg?style=flat-square)](https://hub.docker.com/r/stakater/scaler/)
+[![Docker Stars](https://img.shields.io/docker/stars/stakater/scaler.svg?style=flat-square)](https://hub.docker.com/r/stakater/scaler/)
+[![MicroBadger Size](https://img.shields.io/microbadger/image-size/stakater/scaler.svg?style=flat-square)](https://microbadger.com/images/stakater/scaler)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/stakater/scaler.svg?style=flat-square)](https://microbadger.com/images/stakater/scaler)
+[![license](https://img.shields.io/github/license/stakater/scaler.svg?style=flat-square)](LICENSE)
+[![Get started with Stakater](https://stakater.github.io/README/stakater-github-banner.png)](http://stakater.com/?utm_source=scaler&utm_medium=github)
+
+## Problem
+
+Scale cluster at pre-defined schedule e.g at night and weekends to save cost.
+
+## Scaler
+
+Scaler can modify auto scaling groups to change cluster size at pre-defined schedule
 
 ## Usage
 
