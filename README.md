@@ -53,3 +53,17 @@ A sample configuration of kubernetes cronjob can be found [here](cronjob/example
 ## Adding Support for Cloud Providers
 
 [Provider](internal/pkg/providers/provider.go) can be implemented to modify auto scaling groups on other cloud providers e.g Azure, Google Cloud etc. If new parameters are needed then they can be added by modifying Scaler Options struct in [common.go](internal/pkg/cmd/common/common.go). The values will automatically be available in the Init method of new implementation of [Provider](internal/pkg/providers/provider.go)
+
+## Help
+
+### Have a question?
+
+File a GitHub [issue](https://github.com/stakater/Scaler/issues), or send us an [email](mailto:hello@stakater.com).
+
+### Talk to us on Slack
+
+Join and talk to us on Slack for discussing Reloader
+
+[![Join Slack](https://stakater.github.io/README/stakater-join-slack-btn.png)](https://slack.stakater.com/)
+[![Chat](https://stakater.github.io/README/stakater-chat-btn.png)](https://stakater-community.slack.com/messages/C018HUU9J2F)
+
